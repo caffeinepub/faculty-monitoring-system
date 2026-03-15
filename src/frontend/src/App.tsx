@@ -206,11 +206,11 @@ function LoginPage({
               </CardTitle>
             </CardHeader>
 
-            <CardContent className="p-8 space-y-5">
+            <CardContent className="p-8 space-y-5 bg-white">
               <div className="space-y-2">
                 <Label
                   htmlFor="email"
-                  className="text-foreground/80 text-sm font-medium"
+                  className="text-gray-800 text-sm font-medium"
                 >
                   Email ID
                 </Label>
@@ -221,14 +221,14 @@ function LoginPage({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   data-ocid="login.email_input"
-                  className="h-11"
+                  className="h-11 text-gray-900 placeholder:text-gray-400"
                 />
               </div>
 
               <div className="space-y-2">
                 <Label
                   htmlFor="password"
-                  className="text-foreground/80 text-sm font-medium"
+                  className="text-gray-800 text-sm font-medium"
                 >
                   Password
                 </Label>
@@ -239,7 +239,7 @@ function LoginPage({
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   data-ocid="login.password_input"
-                  className="h-11"
+                  className="h-11 text-gray-900 placeholder:text-gray-400"
                 />
               </div>
 
@@ -254,7 +254,7 @@ function LoginPage({
               <button
                 type="button"
                 onClick={onBack}
-                className="w-full text-sm text-muted-foreground hover:text-foreground transition-colors text-center"
+                className="w-full text-sm text-gray-500 hover:text-gray-800 transition-colors text-center"
               >
                 &larr; Back to Home
               </button>
